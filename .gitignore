@@ -1,3 +1,5 @@
 .DS_Store
 frames/
 jingleping-go
+.idea/
+static/
