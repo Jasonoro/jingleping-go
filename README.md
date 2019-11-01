@@ -1,15 +1,13 @@
-# jingleping-go
+# jingleping-go (U-Twente Fork)
 
-Ping images to the [IPv6 christmas tree](https://jinglepings.com). I wrote this application to draw a dabbing Pikachu and a dancing Sans to the video wall. Check the [Releases](https://github.com/ajmadsen/jingleping-go/releases) page for downloads.
-
-![Screenshot of Video Board with Pikachu and Sans](static/tree.jpg)
+Fork to ping images to https://snt.utwente.io/jinglepings/webpage/
 
 # Usage
 
 ```
 Usage of ./jingleping-go:
   -dst-net string
-    	the destination network of the ipv6 tree (default "2001:4c08:2028")
+    	the destination network of the ipv6 tree (default "2001:610:1908:a000")
   -image string
     	the image to ping to the tree
   -rate int
@@ -29,11 +27,10 @@ If the image is an animated GIF, the rate should be adjusted accordingly. By def
 You'll need Go (preferably 1.11 for module support). Clone the repository somewhere outside your `$GOPATH`, and run `go build`.
 
 ```
-$ cd /tmp
-$ git clone https://github.com/ajmadsen/jingleping-go
+$ git clone https://github.com/Jasonoro/jingleping-go
 $ cd jingleping-go
 $ go build
 $ ./jingleping-go ...
 ```
 
-Alternatively, run `go get -u github.com/ajmadsen/jingleping-go` to install to your `$GOPATH`, and find the installed binary at `$GOPATH/bin/jingleping-go`.
+Alternatively, run `go get -u github.com/Jasonoro/jingleping-go` to install to your `$GOPATH`, and find the installed binary at `$GOPATH/bin/jingleping-go`.

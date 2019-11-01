@@ -28,8 +28,8 @@ var (
 )
 
 const (
-	maxX = 160
-	maxY = 120
+	maxX = 1600
+	maxY = 1200
 )
 
 // filled on package initialization. Contains a simple ICMPv6 ECHO request.
@@ -146,7 +146,7 @@ func main() {
 		}
 
 		bounds := imgs[0].Bounds()
-		log.Printf("image bounds: %d %d", bounds.Dx(), bounds.Dy())
+		fmt.Println(fmt.Sprintf("image bounds: %d %d", bounds.Dx(), bounds.Dy()))
 
 		for _, img := range imgs {
 			addrs := makeAddrs(img, *dstNetFlag, *xOffFlag, *yOffFlag)
